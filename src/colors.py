@@ -41,7 +41,6 @@ def get_new_color_random_slowly(color: tuple[int, int, int]):
     g = max(0, min(g, 255))
     b = max(0, min(b, 255))
     
-    print(r, g, b)
     return (r, g, b)
 
 get_new_color = {
