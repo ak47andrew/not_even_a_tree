@@ -1,0 +1,22 @@
+[colors]
+background="#000000"  # Цвет фона
+line="#FFFFFF"  # Цвет линии
+
+[window]
+width = 1200  # Ширина окна
+height = 700  # Высота окна
+caption = "Tree"  # Название окна
+
+[other]
+line_length = 10  # Длинна линии
+starting_pos_x = 100  # Начальная точка для линии по оси X (ширине)
+starting_pos_y = 100  # Начальная точка для линии по оси Y (высоте)
+
+[gamerules]
+set_borders = true  # Разрешать ли линии выходить за края экрана
+timeout = 100  # Время между итерациями. От этого зависит скорость, с которой будут появляется новые линии
+
+[gamerules.line_color]
+random_line_colors = false  # Если установлен на true, то цвет будет устанавливаться на случайный при каждой итерации. Взаимоисключаемый с random_line_colors_slowly
+random_line_colors_slowly = true  # Если установлен на true, то цвет будет изменяться в соответсвии с параметром  random_line_colors_slowly_rate. Взаимоисключаемый с random_line_colors
+random_line_colors_slowly_rate = 10  # Значение изменения цвета в режиме random_line_colors_slowly. Каждый канал цвета меняется между `-random_line_colors_slowly` и `random_line_colors_slowly` при каждой итерации
